@@ -1,13 +1,150 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.main{
+  display: flex;
+  justify-content: space-between;
+}
+.main-home{
+  display: flex;
+  justify-content: space-evenly;
+}
+.left-img{
+  height: 750px;
+  margin-right: 50px;
+}
+.r-right{
+ margin: 180px;
+}
+.inputs{
+  border: none;
+  background-color:#E8E8E8;
+   font-size: 16px;
+   font-weight: 400;
+   padding: 5px 55px 5px 55px;
+   border-radius: 5px;
+   margin: 15px 20px 0px 0px ;
+}
+.input-btn{
+  background-color: #E8E8E8;
+  color: black;
+  margin-top: 15px;
+  padding:5px 25px 5px 25px;
+  border-radius: 5px;
+  border: none;
+}
+.input-btn:hover{
+  background-color: black;
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.right-1,.right-2{
+  width: 450px;
+  height: 170px;
+  margin-top: 30px;
+  border-radius: 10px;
 }
+.button{
+  border: 1px solid black;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 30px 20px 0px 0px ;
+  padding: 5px 60px 5px 60px;
+}
+.button:hover{
+  background-color:black;
+  color:white;
+}
+.heading{
+  margin-top: 80px;
+  margin-bottom:30px;
+}
+.todo-input{
+  background-color:#E8E8E8;
+  border-radius: 5px;
+  padding: 15px 60px 15px 60px;
+}
+ .line{
+  border-right: 1px solid;
+  height: 550px;
+} 
+.note-box {
+  background-color: #E8E8E8;
+  padding: 10px;
+  margin-bottom: 7px;
+  border-radius: 5px;
+}
+.heading1{
+  margin-top: 55px;
+    border-bottom: 1px solid;
+    padding: 10px;
+}
+.w-heading{
+  padding-left: 20px;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  
+}
+/* Styles for mobile screen Login page*/
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .r-left,
+  .r-right {
+    width: 100%;
+  }
+
+  .r-right {
+    margin-top: 0; /* Remove the margin on smaller screens */
+  }
+}
+
+/* Styles for mobile screen home page*/
+@media (max-width: 768px) {
+  .main-home {
+    flex-direction: column;
+  }
+
+  .right-part,
+  .left-part {
+    width: 100%;
+    padding: 10px;
+  }
+  .left-part {
+    order: 1; 
+  }
+  
+  .right-part {
+    margin-top: 20px; 
+  }
+  .line {
+    display: none; 
+  }
+}
+
+/* /* Styles for mobile screen Register page*/  
+@media (min-width: 768px) {
+  .register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .register-container form {
+    margin-top: 20px;
+  }
+}
+
+
+/* Styles for mobile screen Landing  page*/
+
+@media (max-width: 768px) {
+  .right-1,
+  .right-2 {
+    display: none;
+  }
+}
+
+
